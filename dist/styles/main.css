@@ -4244,6 +4244,19 @@ ul {
   margin-bottom: 40px;
 }
 
+.hero-img {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.hero-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 150%;
+}
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important;

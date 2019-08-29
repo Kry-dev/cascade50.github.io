@@ -10,4 +10,15 @@
         font-size: 1.625rem;
         margin-bottom: 40px;
     }
+    &-img {
+        position: relative;
+        width: 100%;
+        min-height: 80vh;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 150%;
+        }
+    }
 }
