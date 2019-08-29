@@ -2,4 +2,12 @@
     background: url("../img/general/hero-bg.png") no-repeat center;
     background-size: cover;
     width: 100vh;
+    &-title {
+        font-family: "Effra-Light", sans-serif;
+        margin-bottom: 40px;
+    }
+    .lead {
+        font-size: 1.625rem;
+        margin-bottom: 40px;
+    }
 }

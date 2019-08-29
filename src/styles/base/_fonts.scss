@@ -1,148 +1,30 @@
-@mixin fface($path, $family, $type: '', $weight: 400, $svg: '', $style: normal) {
+@mixin fface($path, $family, $type: "", $weight: 400, $svg: "", $style: normal) {
     @font-face {
         font-family: $family;
-        @if $svg == '' {
+        @if $svg == "" {
             // with OTF without SVG and EOT
-            src: url('#{$path}#{$type}.otf') format('opentype'), url('#{$path}#{$type}.woff2') format('woff2'), url('#{$path}#{$type}.woff') format('woff'), url('#{$path}#{$type}.ttf') format('truetype');
-        } @else {
+            //src: url("#{$path}#{$type}.otf") format("opentype"), url("#{$path}#{$type}.woff2") format("woff2"), url("#{$path}#{$type}.woff") format("woff"), url("#{$path}#{$type}.ttf") format("truetype");
+            src: url("#{$path}#{$type}.woff2") format("woff2"), url("#{$path}#{$type}.woff") format("woff"), url("#{$path}#{$type}.ttf") format("truetype");
+        }
+        @else {
             // traditional src inclusions
-            src: url('#{$path}#{$type}.eot');
-            src: url('#{$path}#{$type}.eot?#iefix') format('embedded-opentype'), url('#{$path}#{$type}.woff2') format('woff2'), url('#{$path}#{$type}.woff') format('woff'), url('#{$path}#{$type}.ttf') format('truetype'), url('#{$path}#{$type}.svg##{$svg}') format('svg');
+            src: url("#{$path}#{$type}.eot");
+            src: url("#{$path}#{$type}.eot?#iefix") format("embedded-opentype"), url("#{$path}#{$type}.woff2") format("woff2"), url("#{$path}#{$type}.woff") format("woff"), url("#{$path}#{$type}.ttf") format("truetype"), url("#{$path}#{$type}.svg##{$svg}") format("svg");
         }
         font-weight: $weight;
         font-style: $style;
     }
 }
 // ========================================================importing
-$dir: '/../../fonts/';
+//$dir: "../../fonts/";
+$dir: "../fonts/Effra/";
 
-$effra: 'Effra';
+$effra: "Effra";
 // adding specific types of font-weights
-@include fface('#{$dir}#{$effra}', $effra, '-Light', 300);
-@include fface('#{$dir}#{$effra}', $effra, '-Regular', 400);
-@include fface('#{$dir}#{$effra}', $effra, '-Medium', 500);
-@include fface('#{$dir}#{$effra}', $effra, '-Bold', 700);
-@include fface('#{$dir}#{$effra}', $effra, '-Heavy', 900);
-// ========================================================usage
+@include fface("#{$dir}#{$effra}", $effra, "-Light", 300);
+@include fface("#{$dir}#{$effra}", $effra, "", 400);
+@include fface("#{$dir}#{$effra}", $effra, "-Medium", 500);
+@include fface("#{$dir}#{$effra}", $effra, "-Bold", 700);
+@include fface("#{$dir}#{$effra}", $effra, "-Heavy", 900);
 
-
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('EffraHeavy-Regular.eot');
-//    src: url('EffraHeavy-Regular.eot?#iefix') format('embedded-opentype'),
-//    url('EffraHeavy-Regular.woff2') format('woff2'),
-//    url('EffraHeavy-Regular.woff') format('woff'),
-//    url('EffraHeavy-Regular.ttf') format('truetype'),
-//    url('EffraHeavy-Regular.svg#EffraHeavy-Regular') format('svg');
-//    font-weight: 900;
-//    font-style: normal;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('Effra-Italic.eot');
-//    src: url('Effra-Italic.eot?#iefix') format('embedded-opentype'),
-//    url('Effra-Italic.woff2') format('woff2'),
-//    url('Effra-Italic.woff') format('woff'),
-//    url('Effra-Italic.ttf') format('truetype'),
-//    url('Effra-Italic.svg#Effra-Italic') format('svg');
-//    font-weight: normal;
-//    font-style: italic;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('Effra-Regular.eot');
-//    src: url('Effra-Regular.eot?#iefix') format('embedded-opentype'),
-//    url('Effra-Regular.woff2') format('woff2'),
-//    url('Effra-Regular.woff') format('woff'),
-//    url('Effra-Regular.ttf') format('truetype'),
-//    url('Effra-Regular.svg#Effra-Regular') format('svg');
-//    font-weight: normal;
-//    font-style: normal;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('Effra-BoldItalic.eot');
-//    src: url('Effra-BoldItalic.eot?#iefix') format('embedded-opentype'),
-//    url('Effra-BoldItalic.woff2') format('woff2'),
-//    url('Effra-BoldItalic.woff') format('woff'),
-//    url('Effra-BoldItalic.ttf') format('truetype'),
-//    url('Effra-BoldItalic.svg#Effra-BoldItalic') format('svg');
-//    font-weight: bold;
-//    font-style: italic;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('EffraHeavy-Italic.eot');
-//    src: url('EffraHeavy-Italic.eot?#iefix') format('embedded-opentype'),
-//    url('EffraHeavy-Italic.woff2') format('woff2'),
-//    url('EffraHeavy-Italic.woff') format('woff'),
-//    url('EffraHeavy-Italic.ttf') format('truetype'),
-//    url('EffraHeavy-Italic.svg#EffraHeavy-Italic') format('svg');
-//    font-weight: 900;
-//    font-style: italic;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('Effra-Bold.eot');
-//    src: url('Effra-Bold.eot?#iefix') format('embedded-opentype'),
-//    url('Effra-Bold.woff2') format('woff2'),
-//    url('Effra-Bold.woff') format('woff'),
-//    url('Effra-Bold.ttf') format('truetype'),
-//    url('Effra-Bold.svg#Effra-Bold') format('svg');
-//    font-weight: bold;
-//    font-style: normal;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('EffraMedium-Regular.eot');
-//    src: url('EffraMedium-Regular.eot?#iefix') format('embedded-opentype'),
-//    url('EffraMedium-Regular.woff2') format('woff2'),
-//    url('EffraMedium-Regular.woff') format('woff'),
-//    url('EffraMedium-Regular.ttf') format('truetype'),
-//    url('EffraMedium-Regular.svg#EffraMedium-Regular') format('svg');
-//    font-weight: 500;
-//    font-style: normal;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('EffraLight-Italic.eot');
-//    src: url('EffraLight-Italic.eot?#iefix') format('embedded-opentype'),
-//    url('EffraLight-Italic.woff2') format('woff2'),
-//    url('EffraLight-Italic.woff') format('woff'),
-//    url('EffraLight-Italic.ttf') format('truetype'),
-//    url('EffraLight-Italic.svg#EffraLight-Italic') format('svg');
-//    font-weight: 300;
-//    font-style: italic;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('EffraLight-Regular.eot');
-//    src: url('EffraLight-Regular.eot?#iefix') format('embedded-opentype'),
-//    url('EffraLight-Regular.woff2') format('woff2'),
-//    url('EffraLight-Regular.woff') format('woff'),
-//    url('EffraLight-Regular.ttf') format('truetype'),
-//    url('EffraLight-Regular.svg#EffraLight-Regular') format('svg');
-//    font-weight: 300;
-//    font-style: normal;
-//}
-//
-//@font-face {
-//    font-family: 'Effra';
-//    src: url('EffraMedium-Italic.eot');
-//    src: url('EffraMedium-Italic.eot?#iefix') format('embedded-opentype'),
-//    url('EffraMedium-Italic.woff2') format('woff2'),
-//    url('EffraMedium-Italic.woff') format('woff'),
-//    url('EffraMedium-Italic.ttf') format('truetype'),
-//    url('EffraMedium-Italic.svg#EffraMedium-Italic') format('svg');
-//    font-weight: 500;
-//    font-style: italic;
-//}
 
