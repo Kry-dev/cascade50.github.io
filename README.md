@@ -1,45 +1,30 @@
-# gulp-pug-starter
+# Cascade50 gulp-pug-starter
 
-![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-pug-starter.svg)
-[![dependencies Status](https://david-dm.org/andreyalexeich/gulp-pug-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-pug-starter)
-[![devDependencies Status](https://david-dm.org/andreyalexeich/gulp-pug-starter/dev-status.svg)](https://david-dm.org/andreyalexeich/gulp-pug-starter?type=dev)
-![GitHub stars](https://img.shields.io/github/stars/andreyalexeich/gulp-pug-starter.svg?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/andreyalexeich/gulp-pug-starter.svg?style=social)
-<a href="https://www.qiwi.com/n/ANDREYALEXEICH">
-<img src="https://img.shields.io/badge/%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D0%B2%D0%BE-Qiwi-orange.svg">
-</a>
-<a href="https://www.paypal.me/andreyalexeich/">
-<img src="https://img.shields.io/badge/%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D0%B2%D0%BE-PayPal-informational.svg">
-</a>
-<a href="https://www.tinkoff.ru/cardtocard/">
-<img src="https://img.shields.io/badge/%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D0%B2%D0%BE-%D0%9D%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D1%83%20--%205536%209137%205288%201934-informational.svg">
-</a>
+## Features
+* Class naming by [БЭМ](https://en.bem.info/)
+* BEM structure is used
+* preprocessors are used [Pug](https://pugjs.org/) and [SCSS](https://sass-lang.com/)
+* uses a transpiler [Babel](https://babeljs.io/) to support modern JavaScript (ES6) in browsers
+* uses [Webpack](https://webpack.js.org/) to build JavaScript modules
+* uses [Bootstrap 4](https://getbootstrap.com/) SCSS version
+* hard code guide is used
 
-## Особенности
-* именование классов по [БЭМ](https://ru.bem.info/)
-* используется БЭМ-структура
-* используются препроцессоры [Pug](https://pugjs.org/) и [SCSS](https://sass-lang.com/)
-* используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
-* используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
-* используется CSS-сетка [smart-grid](https://github.com/dmitry-lavrik/smart-grid) на основе Bootstrap для быстрой адаптивной вёрстки
-* используется жёсткий кодгайд
+## Installation
+* install [NodeJS](https://nodejs.org/en/) (if required) and [Yarn](https://yarnpkg.com/en/docs/install)
+* download this repository by terminal [Git](https://git-scm.com/downloads): ```git clone https://github.com/Kry-dev/cascade50.github.io```
+* install ```gulp``` global: ```yarn global add gulp-cli```
+* go to the downloaded folder with project: ```cd cascade50```
+* download the necessary dependencies: ```yarn```
+* enter the command to get started: ```yarn run dev``` (development mode)
+* enter the command to build the project ```yarn run build``` (build mode)
 
-## Установка
-* установите [NodeJS](https://nodejs.org/en/) (если требуется) и [Yarn](https://yarnpkg.com/en/docs/install)
-* скачайте сборку в консоли с помощью [Git](https://git-scm.com/downloads): ```git clone https://github.com/andreyalexeich/gulp-pug-starter.git```
-* установите ```gulp``` глобально: ```yarn global add gulp-cli```
-* перейдите в скачанную папку со сборкой: ```cd gulp-pug-starter```
-* скачайте необходимые зависимости: ```yarn```
-* чтобы начать работу, введите команду: ```yarn run dev``` (режим разработки)
-* чтобы собрать проект, введите команду ```yarn run build``` (режим сборки)
+If you did everything correctly, the browser with the local server should open.
+Build mode involves optimizing the project: compressing images, minifying CSS and JS files for upload to the server.
 
-Если вы всё сделали правильно, у вас должен открыться браузер с локальным сервером.
-Режим сборки предполагает оптимизацию проекта: сжатие изображений, минифицирование CSS и JS-файлов для загрузки на сервер.
-
-## Файловая структура
+## file structure
 
 ```
-gulp-pug-starter
+Cascade50 gulp-pug-starter
 ├── dist
 ├── gulp-tasks
 ├── src
@@ -61,43 +46,43 @@ gulp-pug-starter
 └── .gitignore
 ```
 
-* Корень папки:
-    * ```.babelrc.js``` — настройки Babel
-    * ```.bemrc.js``` — настройки БЭМ
-    * ```.eslintrc.json``` — настройки ESLint
-    * ```.gitignore``` – запрет на отслеживание файлов Git'ом
-    * ```.stylelintrc``` — настройки Stylelint
-    * ```.stylelintignore``` – запрет на отслеживание файлов Stylelint'ом
-    * ```gulpfile.babel.js``` — настройки Gulp
-    * ```webpack.config.js``` — настройки Webpack
-    * ```package.json``` — список зависимостей
-* Папка ```src``` - используется во время разработки:
-    * БЭМ-блоки и компоненты: ```src/blocks```
-    * шрифты: ```src/fonts```
-    * изображения: ```src/img```
-    * JS-файлы: ```src/js```
-    * страницы сайта: ```src/views/pages```
-    * SCSS-файлы: ```src/styles```
-    * служебные Pug-файлы: ```src/views```
-    * конфигурационный файл веб-сервера Apache с настройками [gzip](https://habr.com/ru/post/221849/) (сжатие без потерь): ```src/.htaccess```
-* Папка ```dist``` - папка, из которой запускается локальный сервер для разработки (при запуске ```yarn run dev```)
-* Папка ```gulp-tasks``` - папка с Gulp-тасками
+* Folder root:
+    * ```.babelrc.js``` — Babel settings
+    * ```.bemrc.js``` — BEM settings
+    * ```.eslintrc.json``` — ESLint settings
+    * ```.gitignore``` – Git file tracking ignore
+    * ```.stylelintrc``` — Stylelint settings
+    * ```.stylelintignore``` – Stylelint file tracking ignore
+    * ```gulpfile.babel.js``` — Gulp settings
+    * ```webpack.config.js``` — Webpack settings
+    * ```package.json``` — dependency list
+* folder ```src``` - used during development:
+    * BEM-blocks and components: ```src/blocks```
+    * fonts: ```src/fonts```
+    * images: ```src/img```
+    * JS-files: ```src/js```
+    * site pages: ```src/views/pages```
+    * SCSS-files: ```src/styles```
+    * service Pug-files: ```src/views```
+    * Apache web server configuration file with settings [gzip](https://habr.com/ru/post/221849/) (lossless compression): ```src/.htaccess```
+* Folder ```dist``` - the folder from which the local server for development is launched (when ```yarn run dev``` starts)
+* Folder ```gulp-tasks``` - folder with Gulp-tasks
 
-## Команды
-* ```yarn run lint:style``` - проверить SCSS-файлы. Для VSCode необходимо установить [плагин](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint). Для WebStorm 
-или PHPStorm необходимо включить Stylelint в ```Languages & Frameworks - Style Sheets - Stylelint``` (ошибки будут исправлены автоматически при сохранении файла)
-* ```yarn run lint:style --fix``` - исправить ошибки в SCSS-файлах
-* ```yarn run dev``` - запуск сервера для разработки проекта
-* ```yarn run build``` - собрать проект с оптимизацией без запуска сервера
-* ```yarn run build views``` - скомпилировать Pug-файлы
-* ```yarn run build styles``` - скомпилировать SCSS-файлы
-* ```yarn run build scripts``` - собрать JS-файлы
-* ```yarn run build images``` - собрать изображения
-* ```yarn run build webp``` - сконвертировать изображения в формат ```.webp```
-* ```yarn run build sprites```- собрать спрайты
-* ```yarn run build fonts``` - собрать шрифты
-* ```yarn run build favicons``` - собрать фавиконки
-* ```yarn run build gzip``` - собрать конфигурацию Apache
+## Commands
+* ```yarn run lint:style``` - check SCSS-files. For VSCode needs to install [плагин](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint). For WebStorm 
+or PHPStorm needs turn on Stylelint in ```Languages & Frameworks - Style Sheets - Stylelint``` (errors will be fixed automatically when saving the file)
+* ```yarn run lint:style --fix``` - fix SCSS file errors
+* ```yarn run dev``` - launching a server for project development
+* ```yarn run build``` - build a project with optimization without starting the server
+* ```yarn run build views``` - compile Pug-files
+* ```yarn run build styles``` - compile SCSS-files
+* ```yarn run build scripts``` - compile JS-files
+* ```yarn run build images``` - build images
+* ```yarn run build webp``` - convert images to ```.webp```
+* ```yarn run build sprites```- build sprites
+* ```yarn run build fonts``` - build fonts
+* ```yarn run build favicons``` - build favicons
+* ```yarn run build gzip``` - build Apache configuration
 
 ## Рекомендации по использованию
 ### Компонентный подход к разработке сайтов
@@ -169,63 +154,3 @@ entry: {
 ```
 * подключить скомпилированные js-файлы на необходимых страницах 
 
-## CSS-сетка smart-grid
-В сборщик включена CSS-сетка [smart-grid](https://github.com/dmitry-lavrik/smart-grid) от [Дмитрия Лаврика](https://dmitrylavrik.ru/). Она позволяет избавиться от 
-лишних классов в разметке за счёт использования примесей в SCSS и ускоряет адаптивную вёрстку. Конфигурация уже настроена в соответствии с сеткой [Bootstrap](https://getbootstrap.com/). Пример использования:
-
-**SCSS**
-```scss
-.items{
-    @include row-flex();
-    @include md(justify-content, center);
- 
-    .item{
-        @include col();
-        @include size(3);
-        @include size-md(5);
-        @include size-xs(10);
-    }
-}
-```
-**Результат**
-```css
-.items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-.items .item {
-    box-sizing: border-box;
-    margin-left: 15px;
-    margin-right: 15px;
-    word-wrap: break-word;
-    width: calc(100% / 12 * 3 - 30px);
-}
-@media screen and (max-width: 992px) {
-    .items {
-        justify-content: center;
-    }
-    .items .item {
-        width: calc(100% / 12 * 5 - 30px);
-    }
-}
-@media screen and (max-width: 576px) {
-    .items .item {
-        width: calc(100% / 12 * 10 - 30px);
-    }
-}
-```
-
-## Нужен SCSS без Pug?
-Используйте [эту](https://github.com/andreyalexeich/gulp-scss-starter/) сборку.
-
-## Нравится проект?
-Сообщайте мне о [багах](https://github.com/andreyalexeich/gulp-pug-starter/issues), ставьте звёздочку в правом верхнем углу, задонатьте мне на пиво :beer:
-* [На Qiwi](https://www.qiwi.com/n/ANDREYALEXEICH)
-* [На PayPal](https://www.paypal.me/andreyalexeich)
-* [На карту - 5536 9137 5288 1934](https://www.tinkoff.ru/cardtocard/)
-
-## Контакты
-* ВКонтакте: [@andreyalexeich](https://vk.com/andreyalexeich)
-* Telegram: [@andreyalexeich](https://t-do.ru/andreyalexeich)
