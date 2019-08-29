@@ -16,11 +16,11 @@ const requireDir = require("require-dir"),
             ]
         },
         styles: {
-            src: "./src/styles/main.{scss,sass}",
+            src: "./src/styles/main.scss",
             dist: "./dist/styles/",
             watch: [
-                "./src/blocks/**/*.{scss,sass}",
-                "./src/styles/**/*.{scss,sass}"
+                "./src/blocks/**/*.scss",
+                "./src/styles/**/*.scss"
             ]
         },
         scripts: {
@@ -34,7 +34,8 @@ const requireDir = require("require-dir"),
         images: {
             src: [
                 "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}",
-                "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
+                "!./src/img/svg/*.svg",
+                "!./src/img/favicon.{jpg,jpeg,png,gif}"
             ],
             dist: "./dist/img/",
             watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
@@ -42,7 +43,7 @@ const requireDir = require("require-dir"),
         webp: {
             src: [
                 "./src/img/**/*.{jpg,jpeg,png,tiff}",
-                "!./src/img/favicon/*.{jpg,jpeg,png,gif}"
+                "!./src/img/favicon.{jpg,jpeg,png,gif}"
             ],
             dist: "./dist/img/",
             watch: [
@@ -52,7 +53,7 @@ const requireDir = require("require-dir"),
         },
         sprites: {
             src: "./src/img/svg/*.svg",
-            dist: "./dist/img/sprites/",
+            dist: "./src/img/sprites/",
             watch: "./src/img/svg/*.svg"
         },
         fonts: {
@@ -61,7 +62,7 @@ const requireDir = require("require-dir"),
             watch: "./src/fonts/**/*.{woff,woff2}"
         },
         favicons: {
-            src: "./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}",
+            src: "./src/img/favicon.{jpg,jpeg,png,gif}",
             dist: "./dist/img/favicons/",
         },
         gzip: {
@@ -76,10 +77,9 @@ export { paths };
 
 // export const development = gulp.series("clean", "smart-grid", //removed smart grid
 export const development = gulp.series("clean",
-    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons"]),
+    gulp.parallel(["views", "styles", "scripts","sprites", "images", "webp",  "fonts", "favicons"]),
     gulp.parallel("serve"));
 
 export const prod = gulp.series("clean",
-    gulp.series(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip"]));
-
+    gulp.series(["views", "styles", "scripts", "sprites", "images", "webp",  "fonts", "favicons", "gzip"]));
 export default development;
