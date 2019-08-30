@@ -15,8 +15,12 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 .wrapper {
+    display: block;
     width: 100%;
-    height: 100%;
+    background-image: url("../img/general/home-bg.jpg");
+    background-size: inherit;
+    background-position: right;
+    background-repeat: repeat;
     .section {
         width: 100%;
         //height: calc(100vh - #{$header-height});

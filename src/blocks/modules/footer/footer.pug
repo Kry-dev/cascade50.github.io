@@ -1,9 +1,4 @@
-footer.footer.hero
-    //.container
-    //    .row
-    //        .col-md-2
-    //            img.navbar-logo(src="img/sprites/svg/logo-footer.svg")
-
+footer.footer
     .container
         .row.footer-top
             .col-md-2
@@ -33,36 +28,19 @@ footer.footer.hero
                 ul.list-unstyled
                     li.mb-3
                         p Vibrant, Insightful & drillable cloud based dashboards for Sage 50. Improved decision making in an instant.
-        .footer-bottom
-            p.mb-md-0
-                span.font-weight-bold Complete Analytics Ltd.
-                | ©2019
-                br
-                | St. Faith's House, Mountergate,
-                br
-                | Norwich, NR1 1PYF
-            ul.footer-socials.list-unstyled
-                li
-                    a(href='#')
-                        i.fas.fa-rss
-                li
-                    a(href='#')
-                        i.fab.fa-telegram-plane
-                li
-                    a(href='#')
-                        i.fab.fa-bitcoin
-                li
-                    a(href='#')
-                        i.fab.fa-github
-                li
-                    a(href='#')
-                        i.fab.fa-facebook-f
-                li
-                    a(href='#')
-                        i.fab.fa-twitter
-                li
-                    a(href='#')
-                        i.fab.fa-linkedin
-                li
-                    a(href='#')
-                        i.fab.fa-vk
+                    li.footer-partners
+                        a(href="#")
+                            img(src="img/general/f50.png", alt="#")
+                        a(href="#")
+                            img(src="img/general/sage.png", alt="#")
+        .row.footer-bottom
+            .col-md-3
+                p.mb-md-0
+                    span.font-weight-bold Complete Analytics Ltd.
+                    | ©2019
+                    br
+                    | St. Faith's House, Mountergate,
+                    br
+                    | Norwich, NR1 1PYF
+            .col-md-3.offset-md-6
+                include ../socials/socials
