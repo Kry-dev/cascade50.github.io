@@ -354,17 +354,17 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
 }
 
 h2,
 .h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3,
 .h3 {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
 }
 
 h4,
@@ -4277,6 +4277,40 @@ ul {
   top: 0;
   left: 0;
   max-width: 150%;
+}
+
+.diffs .card {
+  min-height: 18.125rem;
+  padding: 2rem;
+  border-radius: 0;
+  font-family: "Effra", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.diffs .card-header {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  margin-bottom: 1.25rem;
+}
+
+.diffs .card-body {
+  padding: 0;
+}
+
+.diffs .card-text {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.diffs .card-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.diffs .card:hover,
+.diffs .card:focus {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 576px) {

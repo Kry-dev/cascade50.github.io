@@ -1,0 +1,31 @@
+.diffs {
+    .card {
+        min-height: 18.125rem;
+        padding: 2rem;
+        border-radius: 0;
+        font-family: "Effra", sans-serif;
+        margin-bottom: 2rem;
+        &-header {
+            border: 0;
+            padding: 0;
+            background: transparent;
+            margin-bottom: 1.25rem;
+        }
+        &-body {
+            padding: 0;
+        }
+        &-text {
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+        }
+        &-icon {
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &:hover, &:focus {
+            box-shadow: $box-shadow;
+        }
+    }
+}
