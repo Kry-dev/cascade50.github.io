@@ -14,16 +14,6 @@
         &-body {
             padding: 0;
         }
-        &-text {
-            font-size: 1.5rem;
-            line-height: 2.25rem;
-        }
-        &-icon {
-            img {
-                width: 50px;
-                height: 50px;
-            }
-        }
         &:hover, &:focus {
             box-shadow: $box-shadow;
         }
