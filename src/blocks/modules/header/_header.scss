@@ -1,3 +1,4 @@
+
 .header {
     .navbar {
         justify-content: space-between;
@@ -11,6 +12,7 @@
     }
     @include media-breakpoint-up(ld){
         .navbar-expand-lg {
+            height: $header-height;
             .navbar-nav .nav-link {
                 padding: 0  2.0625rem;
             }

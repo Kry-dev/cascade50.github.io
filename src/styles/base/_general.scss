@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, ul {
     height: 100%;
     .section {
         width: 100%;
-        height: 100%;
+        height: calc(100vh - #{$header-height});
         padding: 120px 0;
         .jumbotron {
             display: flex;
