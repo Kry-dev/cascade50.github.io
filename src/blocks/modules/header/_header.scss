@@ -9,4 +9,12 @@
     &-nav {
         justify-content: center;
     }
+    @include media-breakpoint-up(ld){
+        .navbar-expand-lg {
+            .navbar-nav .nav-link {
+                padding: 0  2.0625rem;
+            }
+        }
+       
+    }
 }

@@ -17,5 +17,20 @@ h1, h2, h3, h4, h5, h6, ul {
         width: 100%;
         height: 100%;
         padding: 120px 0;
+        .jumbotron {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            margin-bottom: 0;
+        }
+        &-title {
+            font-family: "Effra-Bold", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .lead {
+            margin-bottom: 2rem;
+        }
     }
 }

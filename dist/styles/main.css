@@ -4188,6 +4188,24 @@ ul {
   padding: 120px 0;
 }
 
+.wrapper .section .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.wrapper .section-title {
+  font-family: "Effra-Bold", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper .section .lead {
+  margin-bottom: 2rem;
+}
+
 .btn {
   text-transform: uppercase;
 }
@@ -4226,6 +4244,10 @@ ul {
 
 .header-nav {
   justify-content: center;
+}
+
+.header .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0  2.0625rem;
 }
 
 .hero {
