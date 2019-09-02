@@ -1,5 +1,5 @@
-import "jquery";
-import "bootstrap";
-import "popper.js";
+import "./import/libs";
 import "./import/modules";
 import "./import/components";
+
+console.log("index js ");

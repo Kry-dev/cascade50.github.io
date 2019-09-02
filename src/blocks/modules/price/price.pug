@@ -1,0 +1,75 @@
+section.section.price.bg-white
+    .container
+        .row.mb-4
+            .col-12
+                h2.section-title.text-center One Simple Price
+        .row
+            .col-lg-6.offset-lg-3.col-md-10.offset-md-1.col-sm-12
+                .price-card
+                    ul#price.nav.nav-tabs(role='tablist')
+                        li.nav-item
+                            a#gbr-tab.nav-link.active(data-toggle='tab', href='#gbr', role='tab', aria-controls='gbr', aria-selected='true') gbr
+                        li.nav-item
+                            a#eur-tab.nav-link(data-toggle='tab', href='#eur', role='tab', aria-controls='eur', aria-selected='false') eur
+                        li.nav-item
+                            a#aud-tab.nav-link(data-toggle='tab', href='#aud', role='tab', aria-controls='aud', aria-selected='false') aud
+                        li.nav-item
+                            a#nzd-tab.nav-link(data-toggle='tab', href='#nzd', role='tab', aria-controls='nzd', aria-selected='false') nzd
+                    #priceContent.tab-content
+                        #gbr.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='gbr-tab')
+                            .price-banknote.bg-primary
+                                span.text-primary &#163;
+                            .price-val
+                                sup &#163;
+                                | 45
+                                sub / Month
+
+                                .price-val-descr
+                                    | + VAT (where applicable)
+                                    br
+                                    b Unlimited Users
+
+                        #eur.tab-pane.fade(role='tabpanel', aria-labelledby='eur-tab')
+                            .price-banknote.bg-warning
+                                span.text-warning &#8364;
+                            .price-val
+                                sup &#8364;
+                                | 45
+                                sub / Month
+
+                                .price-val-descr
+                                    | + VAT (where applicable)
+                                    br
+                                    b Unlimited Users
+                        #aud.tab-pane.fade(role='tabpanel', aria-labelledby='aud-tab')
+                            .price-banknote.bg-success
+                                span.text-success &#8371;
+                            .price-val
+                                sup &#8371;
+                                | 45
+                                sub / Month
+
+                                .price-val-descr
+                                    | + VAT (where applicable)
+                                    br
+                                    b Unlimited Users
+                        #nzd.tab-pane.fade(role='tabpanel', aria-labelledby='aud-tab')
+                            .price-banknote.bg-danger
+                                span.text-danger &#36;
+                            .price-val
+                                sup &#36;
+                                | 45
+                                sub / Month
+
+                                .price-val-descr
+                                    | + VAT (where applicable)
+                                    br
+                                    b Unlimited Users
+
+        .row.my-md-5
+            .col-md-12
+                p.text-center
+                    a.btn.btn-danger.mr-md-3(href='#', role='button') 21 DAY FREE TRIAL
+                        i.arr-right
+                    a.btn.btn-primary(href='#', role='button') Buy Now
+                        i.arr-right

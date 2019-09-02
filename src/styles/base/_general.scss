@@ -63,10 +63,30 @@ h1, h2, h3, h4, h5, h6, ul {
             font-size: 1.5rem;
             line-height: 2.25rem;
         }
+        .card {
+            min-height: 18.125rem;
+            border-radius: 0;
+            font-family: "Effra", sans-serif;
+            margin-bottom: 2rem;
+            &:hover, &:focus {
+                box-shadow: $box-shadow;
+            }
+        }
     }
     .navbar-logo {
         width: 100%;
         max-width: 218px;
+    }
+    a {
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+    .form {
+        label {
+            font-size: 1.125rem;
+        }
     }
 }
 

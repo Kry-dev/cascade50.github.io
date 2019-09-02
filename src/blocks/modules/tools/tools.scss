@@ -1,0 +1,15 @@
+.tools.section {
+    .card {
+        margin-bottom: 4rem;
+        &-header {
+            border-bottom: 0;
+            padding: 2rem 1rem;
+        }
+        &-icon {
+            img {
+                width: 9.125rem;
+                height: 9.125rem;
+            }
+        }
+    }
+}

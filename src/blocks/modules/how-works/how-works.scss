@@ -1,0 +1,10 @@
+.how-works {
+    .card {
+        &:hover, &:focus {
+            box-shadow: $box-shadow;
+        }
+        &-body {
+            min-height: 16.875rem;
+        }
+    }
+}

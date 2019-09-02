@@ -1,10 +1,6 @@
 .diffs {
     .card {
-        min-height: 18.125rem;
         padding: 2rem;
-        border-radius: 0;
-        font-family: "Effra", sans-serif;
-        margin-bottom: 2rem;
         &-header {
             border: 0;
             padding: 0;
@@ -13,9 +9,6 @@
         }
         &-body {
             padding: 0;
-        }
-        &:hover, &:focus {
-            box-shadow: $box-shadow;
         }
     }
 }

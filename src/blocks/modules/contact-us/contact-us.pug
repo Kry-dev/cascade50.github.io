@@ -1,0 +1,28 @@
+//contact us section
+section.section.contact-us.bg-white
+    .container
+        .row.mb-4
+            .col-md-8.offset-md-2
+                h2.section-title.text-center Contact Us
+                p.lead.text-center.mb-0 Talk it through with a member of our very friendly team.  We'll show you
+                    | what the dashboards can do and how we can help your practice.
+                p.lead.text-center
+                    a(href="tel:03330 112 882") Call Us: 03330 112 882
+        .row
+            .col-md-8.offset-md-2
+                form.form
+                    .form-row.mb-md-4
+                        .form-group.col-md-6
+                            label(for='contactName') Name
+                            input#contactName.form-control.form-control-lg(type='name', placeholder='Enter your name here')
+                        .form-group.col-md-6
+                            label(for='contactEmail') Email
+                            input#contactEmail.form-control.form-control-lg(type='email', placeholder='Enter your email here')
+                    .form-group.mb-4
+                        label(for='contactTextarea') Your Message
+                        textarea#contactTextarea.form-control.form-control-lg(rows='5', placeholder="Enter your message details here")
+                    .form-group.text-center
+                        button.btn.btn-danger(type='submit') Send Message
+                            i.arr-right
+
+//end of contact us section

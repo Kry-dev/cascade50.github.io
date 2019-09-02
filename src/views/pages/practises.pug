@@ -1,0 +1,24 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Accountancy Practises";
+
+block content
+	.wrapper
+		//HEADER
+		include ../../blocks/modules/header/header
+		//end of HEADER
+		//CONTENT
+		main.main(role="main")
+			include ../../blocks/modules/hero-practises/hero-practises
+			include ../../blocks/modules/tools/tools
+			include ../../blocks/modules/video/video
+			include ../../blocks/modules/features-practises/features-practises
+			include ../../blocks/modules/contact-us/contact-us
+		//end of CONTENT
+		//FOOTER
+		include ../../blocks/modules/footer/footer
+		// end of FOOTER
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")
