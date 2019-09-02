@@ -1,4 +1,4 @@
-modules.define('hero-studies', ['i-bem-dom'], function(provide, bemDom) {
+modules.define('team', ['i-bem-dom'], function(provide, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod: {

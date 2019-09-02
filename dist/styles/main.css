@@ -5681,6 +5681,67 @@ ul {
   font-size: 0.875rem;
 }
 
+.team .card {
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.team .card-header {
+  padding: 2.5rem 5.625rem;
+  border-bottom: 0;
+}
+
+.team .card-body {
+  padding: 0 1rem 2rem;
+}
+
+.team .card .img-thumbnail {
+  padding: 0;
+  border-radius: 0;
+}
+
+.team .card-title {
+  font-family: "Effra-Light", sans-serif;
+}
+
+.team-photo {
+  margin-bottom: 2rem;
+}
+
+.team-photo img {
+  max-width: 350px;
+  max-height: 400px;
+}
+
+.team-mate {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team-mate-name {
+  text-align: center;
+  width: 100%;
+  font-family: "Effra-Light", sans-serif;
+}
+
+.team-mate-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  color: #fff;
+  background: #221d35;
+}
+
+.team-mate-link .fa {
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 50px;
+}
+
 .footer {
   width: 100%;
   padding: 40px 0;
