@@ -5312,6 +5312,10 @@ ul {
   padding: 0  2.0625rem;
 }
 
+.header .login-nav .nav-item + .nav-item {
+  border-left: 1px solid #dee2e6;
+}
+
 .hero {
   background: transparent;
   background-size: cover;

@@ -16,12 +16,16 @@ header.header.bg-white.px-0
                         a.nav-link(href='practises.html') Accountancy Practices
                     li.nav-item
                         a.nav-link(href='studies.html') Case Studies
-                    li.nav-item
-                        a.nav-link(href='about.html') About
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') About
+                        .dropdown-menu
+                            a.dropdown-item(href='our-history.html') Our History
+                            a.dropdown-item(href='team.html') Meet The Teem
+
                     li.nav-item
                         a.nav-link(href='get-in-touch.html') Contact Us
 
-            ul.navbar-nav
+            ul.navbar-nav.login-nav
                 li.nav-item
                     a.nav-link(href='#') Login
                 li.nav-item

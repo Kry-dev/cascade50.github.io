@@ -15,4 +15,9 @@
         }
        
     }
+    .login-nav {
+        .nav-item + .nav-item {
+            border-left: 1px solid $border-color;
+        }
+    }
 }
