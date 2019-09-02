@@ -5643,6 +5643,44 @@ ul {
   color: #3a3a49;
 }
 
+.section.case-hero {
+  padding: 2rem 0;
+}
+
+.section.case-hero .case-hero-logo {
+  max-width: 180px;
+  margin-bottom: 1rem;
+}
+
+.section.case-hero .lead {
+  font-size: 1.75rem;
+}
+
+.section.case-hero .btn {
+  text-transform: capitalize;
+}
+
+.case-descr {
+  font-family: "Effra-Light", sans-serif;
+}
+
+.case-descr .case-title {
+  font-size: 3rem;
+}
+
+.case-descr .case-subtitle {
+  font-size: 1.75rem;
+}
+
+.case-descr p {
+  font-size: 1.5rem;
+}
+
+.case-descr .btn {
+  font-family: "Effra", sans-serif;
+  font-size: 0.875rem;
+}
+
 .footer {
   width: 100%;
   padding: 40px 0;
