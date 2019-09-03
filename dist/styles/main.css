@@ -5607,8 +5607,13 @@ ul {
   font-size: 1rem;
 }
 
+.map {
+  width: 100%;
+}
+
 .map iframe {
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .map-info {
