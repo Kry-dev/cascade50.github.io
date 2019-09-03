@@ -1,6 +1,72 @@
 $price-currency-width : 276px;
 $price-currency-height : $price-currency-width;
 .price {
+    @include media-breakpoint-down(md) {
+        .tab-pane {
+            min-height: initial;
+        }
+        .tab-pane.active {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+        &-val {
+            width: initial;
+        }
+        &-banknote {
+            position: initial;
+            width: $price-currency-width * 0.75;
+            height: $price-currency-height * 0.75;
+            padding: 0;
+            transform: translateX(0);
+            font-size: 2.5rem;
+        }
+        &-val {
+            font-size: 100px;
+        }
+        sup {
+            font-size: 40px;
+            top: -1em;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .tab-pane {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &-card {
+            .nav {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            .nav-tabs .nav-link {
+                padding: .5rem 1rem;
+            }
+        }
+        &-banknote {
+            width: $price-currency-width * 0.55;
+            height: $price-currency-height * 0.55;
+            font-size: 2rem;
+            margin: 0 auto 2rem;
+        }
+        &-val {
+            font-size: 60px;
+            width: 100%;
+        }
+        &-card .nav-item + .nav-item {
+            margin-left: .25rem;
+            margin-bottom: .25rem;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        &-banknote {
+            left: -50%;
+        }
+    }
     &-card {
         width: 100%;
         box-shadow: $box-shadow;
@@ -47,7 +113,7 @@ $price-currency-height : $price-currency-width;
         justify-content: center;
         position: absolute;
         top: 0;
-        left: -50%;
+        left: -70%;
         width: $price-currency-width;
         height: $price-currency-height;
         overflow: hidden;
@@ -80,8 +146,5 @@ $price-currency-height : $price-currency-width;
             font-size: 1.5rem;
             line-height: 1;
         }
-    }
-    @include media-breakpoint-down(md) {
-    
     }
 }

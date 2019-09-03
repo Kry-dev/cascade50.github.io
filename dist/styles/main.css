@@ -5472,7 +5472,7 @@ ul {
   justify-content: center;
   position: absolute;
   top: 0;
-  left: -50%;
+  left: -70%;
   width: 276px;
   height: 276px;
   overflow: hidden;
@@ -9414,6 +9414,10 @@ ul {
     width: 150%;
     transform: translateY(-50%);
   }
+
+  .price-banknote {
+    left: -50%;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -9482,6 +9486,39 @@ ul {
   .section.empower .card-body {
     padding: 0;
   }
+
+  .price .tab-pane {
+    min-height: initial;
+  }
+
+  .price .tab-pane.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .price-val {
+    width: initial;
+  }
+
+  .price-banknote {
+    position: initial;
+    width: 207px;
+    height: 207px;
+    padding: 0;
+    transform: translateX(0);
+    font-size: 2.5rem;
+  }
+
+  .price-val {
+    font-size: 100px;
+  }
+
+  .price sup {
+    font-size: 40px;
+    top: -1em;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -9512,6 +9549,39 @@ ul {
     display: block;
     max-width: 80%;
     margin: auto;
+  }
+
+  .price .tab-pane {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .price-card .nav {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .price-card .nav-tabs .nav-link {
+    padding: .5rem 1rem;
+  }
+
+  .price-banknote {
+    width: 151.8px;
+    height: 151.8px;
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+  }
+
+  .price-val {
+    font-size: 60px;
+    width: 100%;
+  }
+
+  .price-card .nav-item + .nav-item {
+    margin-left: .25rem;
+    margin-bottom: .25rem;
   }
 
   .footer {
