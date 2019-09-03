@@ -59,4 +59,20 @@
             }
         }
     }
+    @include media-breakpoint-down(md) {
+        .navbar-nav .dropdown-menu {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            
+        }
+        .navbar-nav .nav-link {
+            padding: 0 !important;
+        }
+        .login-nav {
+            border-top: 1px solid $border-color;
+            padding: .5rem 0 0;
+            margin-top: .5rem;
+        }
+    }
 }

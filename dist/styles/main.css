@@ -5664,6 +5664,7 @@ ul {
 
 .section.case-hero .lead {
   font-size: 1.75rem;
+  text-align: left;
 }
 
 .section.case-hero .btn {
@@ -9493,6 +9494,22 @@ ul {
     margin: 1rem auto 1rem;
   }
 
+  .header .navbar-nav .dropdown-menu {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  .header .navbar-nav .nav-link {
+    padding: 0 !important;
+  }
+
+  .header .login-nav {
+    border-top: 1px solid #dee2e6;
+    padding: .5rem 0 0;
+    margin-top: .5rem;
+  }
+
   .hero-title {
     text-align: center;
     font-size: 3rem;
@@ -9542,6 +9559,10 @@ ul {
   .price sup {
     font-size: 40px;
     top: -1em;
+  }
+
+  .section.case-hero .lead {
+    text-align: left;
   }
 }
 
@@ -9610,6 +9631,11 @@ ul {
   .price-card .nav-item + .nav-item {
     margin-left: .25rem;
     margin-bottom: .25rem;
+  }
+
+  .case-descr .btn {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   .footer {
