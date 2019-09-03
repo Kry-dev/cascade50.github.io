@@ -66,7 +66,7 @@ const requireDir = require("require-dir"),
             dist: "./dist/img/favicons/",
         },
         gzip: {
-            src: "./src/.htaccess",
+            src: "./src/.htaccess1",
             dist: "./dist/"
         }
     };
