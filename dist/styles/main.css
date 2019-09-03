@@ -5346,6 +5346,10 @@ ul {
   width: 100%;
 }
 
+.what-is .btn {
+  margin-bottom: 1rem;
+}
+
 .diffs .card {
   padding: 2rem;
 }
@@ -5399,11 +5403,11 @@ ul {
   z-index: 3;
 }
 
-.empower .card {
+.section.empower .card {
   height: 100%;
 }
 
-.empower .card-body {
+.section.empower .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5412,10 +5416,6 @@ ul {
 .how-works .card:hover,
 .how-works .card:focus {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.how-works .card-body {
-  min-height: 16.875rem;
 }
 
 .price-card {
@@ -7640,6 +7640,10 @@ ul {
     padding: 4rem;
   }
 
+  .how-works .card-body {
+    min-height: 16.875rem;
+  }
+
   .cases .card {
     min-height: 26.875rem;
     padding: 4rem;
@@ -9469,6 +9473,15 @@ ul {
     text-align: center;
     font-size: 3rem;
   }
+
+  .section.empower {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .section.empower .card-body {
+    padding: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -9495,7 +9508,7 @@ ul {
     margin-bottom: 1rem;
   }
 
-  .wrapper .section .img-fluid {
+  .what-is .img-fluid {
     display: block;
     max-width: 80%;
     margin: auto;

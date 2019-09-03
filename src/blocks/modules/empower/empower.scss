@@ -1,4 +1,13 @@
-.empower {
+.section.empower {
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        padding-bottom: 0;
+        .card {
+            &-body {
+                padding: 0;
+            }
+        }
+    }
     .card {
         height: 100%;
         &-body {

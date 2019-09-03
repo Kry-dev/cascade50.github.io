@@ -1,10 +1,14 @@
 .how-works {
+    @include media-breakpoint-up(md) {
+        .card {
+            &-body {
+                min-height: 16.875rem;
+            }
+        }
+    }
     .card {
         &:hover, &:focus {
             box-shadow: $box-shadow;
-        }
-        &-body {
-            min-height: 16.875rem;
         }
     }
 }

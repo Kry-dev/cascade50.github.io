@@ -1,0 +1,12 @@
+.what-is {
+    @include media-breakpoint-down(sm) {
+        .img-fluid {
+            display: block;
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+    .btn {
+        margin-bottom: 1rem;
+    }
+}
