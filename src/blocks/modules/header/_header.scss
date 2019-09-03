@@ -6,18 +6,57 @@
     &-nav {
         justify-content: center;
     }
-    @include media-breakpoint-up(ld){
+    @include media-breakpoint-up(lg) {
         .navbar-expand-lg {
             height: $header-height;
             .navbar-nav .nav-link {
                 padding: 0  2.0625rem;
             }
         }
-       
+        .navbar-brand {
+            position: absolute;
+            left: 1rem;
+        }
+        .login-nav {
+            position: absolute;
+            right: 1rem;
+        }
+        .login-nav {
+            .nav-item + .nav-item {
+                border-left: 1px solid $border-color;
+            }
+        }
     }
-    .login-nav {
-        .nav-item + .nav-item {
-            border-left: 1px solid $border-color;
+    @media (max-width: 1280px) {
+        .navbar-expand-lg {
+            .navbar-nav .nav-link {
+                padding: 0 1rem;
+            }
+        }
+        .navbar-brand {
+            position: initial;
+        }
+        .login-nav {
+            position: initial;
+        }
+        .navbar-logo {
+            max-width: 120px;
+        }
+    }
+    
+    .navbar-toggler {
+        background: $lilac-bg;
+        width: 50px;
+        height: 40px;
+        transition: $transition-base;
+        .fa {
+            color: $white;
+            font-size: 30px;
+        }
+        &[aria-expanded="true"] {
+            .fa:before {
+                content: "\f00d";
+            }
         }
     }
 }

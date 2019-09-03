@@ -1,26 +1,42 @@
 .hero {
+    @include media-breakpoint-down(md) {
+        &-title {
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+    
+    }
     background: transparent;
-    //background: url("../img/general/hero-bg.png") no-repeat center;
     background-size: cover;
     width: 100vh;
-    &-title {
-        font-family: "Effra-Light", sans-serif;
-        margin-bottom: 40px;
+    @media (min-width: 1200px) {
+        &-img {
+            min-height: 80vh;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 150%;
+                transform: translateY(-50%);
+            }
+        }
     }
     .lead {
         font-size: 1.625rem;
         margin-bottom: 40px;
     }
+    &-title {
+        font-family: "Effra-Light", sans-serif;
+        margin-bottom: 40px;
+    }
     &-img {
         position: relative;
         width: 100%;
-        min-height: 80vh;
         img {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            max-width: 150%;
-            transform: translateY(-50%);
+            position: initial;
+            width: 100%;
         }
     }
 }

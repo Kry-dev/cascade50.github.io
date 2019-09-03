@@ -23,10 +23,42 @@ h1, h2, h3, h4, h5, h6, ul {
     background-repeat: repeat;
     .section {
         width: 100%;
-        //height: calc(100vh - #{$header-height});
         height: 100%;
-        padding: 120px 0;
         overflow: hidden;
+        padding: 120px 0;
+        @include media-breakpoint-down(md) {
+            padding: 50px 0;
+            .jumbotron {
+                padding: 2rem;
+            }
+            .lead {
+                text-align: center;
+            }
+            .btn {
+                margin: 1rem auto 1rem;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            .btn {
+                display: block;
+                width: 100%;
+                font-size: 0.75rem;
+            }
+            &-title {
+                text-align: center;
+                font-size: 1.875rem;
+                margin-bottom: 1.5rem;
+            }
+            .lead {
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+            }
+            .img-fluid {
+                display: block;
+                max-width: 80%;
+                margin: auto;
+            }
+        }
         .jumbotron {
             display: flex;
             flex-direction: column;
@@ -86,6 +118,11 @@ h1, h2, h3, h4, h5, h6, ul {
     .form {
         label {
             font-size: 1.125rem;
+        }
+    }
+    @media (max-width: 1280px) {
+        .navbar-logo {
+            max-width: 120px;
         }
     }
 }
