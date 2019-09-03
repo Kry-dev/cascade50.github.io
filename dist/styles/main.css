@@ -5243,6 +5243,7 @@ ul {
   border-radius: 0;
   font-family: "Effra", sans-serif;
   margin-bottom: 2rem;
+  height: 100%;
 }
 
 .wrapper .section .card:hover,
@@ -5690,6 +5691,11 @@ ul {
   margin-bottom: 2rem;
 }
 
+.team .card .img-thumbnail {
+  padding: 0;
+  border-radius: 0;
+}
+
 .team .card-header {
   padding: 2.5rem 5.625rem;
   border-bottom: 0;
@@ -5697,11 +5703,6 @@ ul {
 
 .team .card-body {
   padding: 0 1rem 2rem;
-}
-
-.team .card .img-thumbnail {
-  padding: 0;
-  border-radius: 0;
 }
 
 .team .card-title {
@@ -7637,7 +7638,6 @@ ul {
 
   .trust .card {
     min-height: 26.875rem;
-    padding: 4rem;
   }
 
   .how-works .card-body {
@@ -7646,7 +7646,6 @@ ul {
 
   .cases .card {
     min-height: 26.875rem;
-    padding: 4rem;
   }
 
   .footer-nav {
@@ -8545,6 +8544,14 @@ ul {
 
   .header .login-nav .nav-item + .nav-item {
     border-left: 1px solid #dee2e6;
+  }
+
+  .trust .card {
+    padding: 4rem;
+  }
+
+  .cases .card {
+    padding: 4rem;
   }
 }
 
@@ -9448,6 +9455,14 @@ ul {
     padding-right: 0;
     padding-left: 0;
   }
+
+  .team .card-header {
+    padding: 2rem;
+  }
+
+  .team .team-photo img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -9476,6 +9491,10 @@ ul {
   .hero-title {
     text-align: center;
     font-size: 3rem;
+  }
+
+  .diffs {
+    height: 100%;
   }
 
   .section.empower {
@@ -9526,6 +9545,10 @@ ul {
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .wrapper .section .card {
+    min-height: initial;
   }
 
   .wrapper .section .btn {

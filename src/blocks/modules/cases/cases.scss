@@ -1,8 +1,12 @@
 .cases {
+    @include media-breakpoint-up(lg) {
+        .card {
+            padding: 4rem;
+        }
+    }
     @include media-breakpoint-up(md) {
         .card {
             min-height: 26.875rem;
-            padding: 4rem;
         }
     }
     .card {

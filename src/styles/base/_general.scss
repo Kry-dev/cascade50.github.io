@@ -39,6 +39,9 @@ h1, h2, h3, h4, h5, h6, ul {
             }
         }
         @include media-breakpoint-down(sm) {
+            .card {
+                min-height: initial;
+            }
             .btn {
                 display: block;
                 width: 100%;
@@ -95,6 +98,7 @@ h1, h2, h3, h4, h5, h6, ul {
             border-radius: 0;
             font-family: "Effra", sans-serif;
             margin-bottom: 2rem;
+            height: 100%;
             &:hover, &:focus {
                 box-shadow: $box-shadow;
             }

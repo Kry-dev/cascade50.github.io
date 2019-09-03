@@ -1,4 +1,7 @@
 .diffs {
+    @include media-breakpoint-down(md) {
+        height: 100%;
+    }
     .card {
         padding: 2rem;
         &-header {
