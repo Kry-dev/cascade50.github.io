@@ -9,12 +9,15 @@
             color: inherit;
             display: block;
             text-align: center;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0;
             &:hover,
             &:focus {
                 cursor: pointer;
                 text-decoration: none;
             }
+        }
+        li {
+            margin-bottom: .75rem;
         }
         @include media-breakpoint-up(md) {
             direction: column;
