@@ -5452,33 +5452,27 @@ ul {
 }
 
 .price-card .tab-content {
+  display: flex;
+  width: 100%;
   padding: 0;
 }
 
 .price-card .tab-pane {
-  flex-wrap: nowrap;
-  flex-direction: row;
-  position: relative;
-  min-height: 303.6px;
+  width: 100%;
 }
 
 .price-card .tab-pane.active {
-  display: flex;
-  padding: 0 2rem 2rem 138px;
+  padding: 0 2rem 2rem;
 }
 
 .price-banknote {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: -70%;
-  width: 276px;
-  height: 276px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 207px;
+  height: 207px;
   overflow: hidden;
   padding: 2rem;
-  transform: translateX(50%);
   border-radius: 1rem;
   background-image: url("../img/sprites/svg/banknote.svg");
   background-size: 100%;
@@ -5489,17 +5483,29 @@ ul {
   text-align: center;
 }
 
-.price-val {
+.price-banknote span {
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price-val {
+  display: inline-block;
+  vertical-align: top;
   text-align: right;
+  float: right;
   width: 100%;
+  max-width: 50%;
   height: 100%;
   font-size: 140px;
   line-height: 1;
+  word-wrap: break-word;
 }
 
 .price-val sup {
-  font-size: 60px;
+  font-size: 55px;
   top: -1em;
 }
 
@@ -9429,7 +9435,8 @@ ul {
   }
 
   .price-banknote {
-    left: -50%;
+    width: 276px;
+    height: 276px;
   }
 }
 
@@ -9528,39 +9535,6 @@ ul {
     padding: 0;
   }
 
-  .price .tab-pane {
-    min-height: initial;
-  }
-
-  .price .tab-pane.active {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-
-  .price-val {
-    width: initial;
-  }
-
-  .price-banknote {
-    position: initial;
-    width: 207px;
-    height: 207px;
-    padding: 0;
-    transform: translateX(0);
-    font-size: 2.5rem;
-  }
-
-  .price-val {
-    font-size: 100px;
-  }
-
-  .price sup {
-    font-size: 40px;
-    top: -1em;
-  }
-
   .section.case-hero .lead {
     text-align: left;
   }
@@ -9607,6 +9581,10 @@ ul {
     justify-content: center;
   }
 
+  .price .tab-pane.show {
+    display: flex;
+  }
+
   .price-card .nav {
     padding: 1rem;
     margin-bottom: 1rem;
@@ -9617,6 +9595,7 @@ ul {
   }
 
   .price-banknote {
+    display: flex;
     width: 151.8px;
     height: 151.8px;
     font-size: 2rem;
@@ -9625,7 +9604,12 @@ ul {
 
   .price-val {
     font-size: 60px;
-    width: 100%;
+    max-width: 100%;
+  }
+
+  .price sup {
+    font-size: 40px;
+    top: -1em;
   }
 
   .price-card .nav-item + .nav-item {

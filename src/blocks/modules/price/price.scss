@@ -1,41 +1,15 @@
 $price-currency-width : 276px;
 $price-currency-height : $price-currency-width;
 .price {
-    @include media-breakpoint-down(md) {
-        .tab-pane {
-            min-height: initial;
-        }
-        .tab-pane.active {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 1rem;
-        }
-        &-val {
-            width: initial;
-        }
-        &-banknote {
-            position: initial;
-            width: $price-currency-width * 0.75;
-            height: $price-currency-height * 0.75;
-            padding: 0;
-            transform: translateX(0);
-            font-size: 2.5rem;
-        }
-        &-val {
-            font-size: 100px;
-        }
-        sup {
-            font-size: 40px;
-            top: -1em;
-        }
-    }
     @include media-breakpoint-down(sm) {
         .tab-pane {
             flex-wrap: wrap;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            &.show {
+                display: flex;
+            }
         }
         &-card {
             .nav {
@@ -47,6 +21,7 @@ $price-currency-height : $price-currency-width;
             }
         }
         &-banknote {
+            display: flex;
             width: $price-currency-width * 0.55;
             height: $price-currency-height * 0.55;
             font-size: 2rem;
@@ -54,7 +29,11 @@ $price-currency-height : $price-currency-width;
         }
         &-val {
             font-size: 60px;
-            width: 100%;
+            max-width: 100%;
+        }
+        sup {
+            font-size: 40px;
+            top: -1em;
         }
         &-card .nav-item + .nav-item {
             margin-left: .25rem;
@@ -64,7 +43,8 @@ $price-currency-height : $price-currency-width;
     
     @media (min-width: 1200px) {
         &-banknote {
-            left: -50%;
+            width: $price-currency-width;
+            height: $price-currency-height;
         }
     }
     &-card {
@@ -94,31 +74,25 @@ $price-currency-height : $price-currency-width;
             margin-left: 1rem;
         }
         .tab-content {
+            display: flex;
+            width: 100%;
             padding: 0;
         }
         .tab-pane {
-            flex-wrap: nowrap;
-            flex-direction: row;
-            position: relative;
-            min-height: $price-currency-height * 1.1;
+            width: 100%;
             &.active {
-                display: flex;
-                padding: 0 2rem 2rem $price-currency-width/2;
+                padding: 0 2rem 2rem;
             }
         }
     }
     &-banknote {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        left: -70%;
-        width: $price-currency-width;
-        height: $price-currency-height;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: $price-currency-width * 0.75;
+        height: $price-currency-height * 0.75;
         overflow: hidden;
         padding: 2rem;
-        transform: translateX(50%);
         border-radius: $border-radius * 4;
         background-image: url("../img/sprites/svg/banknote.svg");
         background-size: 100%;
@@ -127,16 +101,27 @@ $price-currency-height : $price-currency-width;
         font-size: 3.25rem;
         font-family: "Effra-Bold", sans-serif;
         text-align: center;
+        span {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
     &-val {
-        display: block;
+        display: inline-block;
+        vertical-align: top;
         text-align: right;
+        float: right;
         width: 100%;
+        max-width: 50%;
         height: 100%;
         font-size: 140px;
         line-height: 1;
+        word-wrap: break-word;
         sup {
-            font-size: 60px;
+            font-size: 55px;
             top: -1em;
         }
         sub {
