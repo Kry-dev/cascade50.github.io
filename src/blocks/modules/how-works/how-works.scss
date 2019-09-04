@@ -2,6 +2,7 @@
     @include media-breakpoint-up(md) {
         .card {
             &-body {
+                flex: 1;
                 min-height: 16.875rem;
             }
         }
