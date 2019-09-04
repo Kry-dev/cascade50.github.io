@@ -6,13 +6,7 @@
     &-nav {
         justify-content: center;
     }
-    @include media-breakpoint-up(lg) {
-        .navbar-expand-lg {
-            height: $header-height;
-            .navbar-nav .nav-link {
-                padding: 0  2.0625rem;
-            }
-        }
+    @include media-breakpoint-up(md) {
         .navbar-brand {
             position: absolute;
             top: 50%;
@@ -25,6 +19,22 @@
             right: 1rem;
             transform: translateY(-50%);
         }
+    }
+    @include media-breakpoint-down(md) {
+        .navbar-brand,
+        .login-nav {
+            position: initial;
+            transform: translateY(0);
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .navbar-expand-lg {
+            height: $header-height;
+            .navbar-nav .nav-link {
+                padding: 0  2.0625rem;
+            }
+        }
+        
         .login-nav {
             .nav-item + .nav-item {
                 border-left: 1px solid $border-color;
@@ -37,12 +47,7 @@
                 padding: 0 1rem;
             }
         }
-        .navbar-brand {
-            position: initial;
-        }
-        .login-nav {
-            position: initial;
-        }
+        
         .navbar-logo {
             max-width: 120px;
         }
@@ -71,7 +76,7 @@
             
         }
         .navbar-nav .nav-link {
-            padding: 0 !important;
+            padding: .5rem 0 !important;
         }
         .login-nav {
             border-top: 1px solid $border-color;

@@ -7636,6 +7636,20 @@ ul {
     display: none;
   }
 
+  .header .navbar-brand {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+  }
+
+  .header .login-nav {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+
   .trust .card {
     min-height: 26.875rem;
   }
@@ -8516,20 +8530,6 @@ ul {
 
   .header .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0  2.0625rem;
-  }
-
-  .header .navbar-brand {
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    transform: translateY(-50%);
-  }
-
-  .header .login-nav {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
   }
 
   .header .login-nav .nav-item + .nav-item {
@@ -9441,14 +9441,6 @@ ul {
     padding: 0 1rem;
   }
 
-  .header .navbar-brand {
-    position: initial;
-  }
-
-  .header .login-nav {
-    position: initial;
-  }
-
   .header .navbar-logo {
     max-width: 120px;
   }
@@ -9494,6 +9486,12 @@ ul {
     margin: 1rem auto 1rem;
   }
 
+  .header .navbar-brand,
+  .header .login-nav {
+    position: initial;
+    transform: translateY(0);
+  }
+
   .header .navbar-nav .dropdown-menu {
     margin: 0;
     border: 0;
@@ -9501,7 +9499,7 @@ ul {
   }
 
   .header .navbar-nav .nav-link {
-    padding: 0 !important;
+    padding: .5rem 0 !important;
   }
 
   .header .login-nav {
