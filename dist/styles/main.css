@@ -8520,12 +8520,16 @@ ul {
 
   .header .navbar-brand {
     position: absolute;
+    top: 50%;
     left: 1rem;
+    transform: translateY(-50%);
   }
 
   .header .login-nav {
     position: absolute;
+    top: 50%;
     right: 1rem;
+    transform: translateY(-50%);
   }
 
   .header .login-nav .nav-item + .nav-item {
