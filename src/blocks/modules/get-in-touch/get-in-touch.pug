@@ -2,13 +2,13 @@
 form.form
    .form-group
        label(for='contactName') Name
-       input#contactName.form-control.form-control-lg(type='name', placeholder='Enter your name here')
+       input#contactName.form-control.form-control-lg(type='name', pattern=".{3,}"   required, title="3 characters minimum")
    .form-group
        label(for='contactEmail') Email
-       input#contactEmail.form-control.form-control-lg(type='email', placeholder='Enter your email here')
+       input#contactEmail.form-control.form-control-lg(type='email', required)
    .form-group.mb-4
        label(for='contactTextarea') Your Message
-       textarea#contactTextarea.form-control.form-control-lg(rows='5', placeholder="Enter your message details here")
+       textarea#contactTextarea.form-control.form-control-lg(rows='5', minlength="10",   required, title="10 characters minimum"))
    .form-group.text-left
        button.btn.btn-danger(type='submit') Send Message
            i.arr-right
