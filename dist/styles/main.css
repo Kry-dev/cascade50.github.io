@@ -9524,6 +9524,12 @@ ul {
     font-size: 3rem;
   }
 
+  .hero .jumbotron-btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .diffs {
     height: 100%;
   }
@@ -9575,6 +9581,10 @@ ul {
   .wrapper .section .lead {
     font-size: 1.125rem;
     margin-bottom: 1rem;
+  }
+
+  .hero .jumbotron-btn-group {
+    flex-direction: column;
   }
 
   .what-is .img-fluid {

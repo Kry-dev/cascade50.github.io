@@ -40,4 +40,14 @@
             width: 100%;
         }
     }
+    .jumbotron-btn-group {
+        @include media-breakpoint-down(md) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
 }
