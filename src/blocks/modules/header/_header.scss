@@ -52,6 +52,7 @@
             max-width: 120px;
         }
     }
+    
     .dropdown-item:hover,
     .dropdown-item:focus {
         color: rgba($header-link-color,.7);
@@ -78,6 +79,9 @@
             border: 0;
             padding: 0;
             
+        }
+        .dropdown-item {
+            padding: .5rem 1.5rem;
         }
         .navbar-nav .nav-link {
             padding: .5rem 0 !important;
