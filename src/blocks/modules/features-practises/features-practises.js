@@ -1,10 +1,10 @@
-modules.define('features-practises', ['i-bem-dom'], function(provide, bemDom) {
+modules.define('features-practices', ['i-bem-dom'], function(provide, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod: {
         js: {
             inited: function() {
-                
+
             }
         }
     }
