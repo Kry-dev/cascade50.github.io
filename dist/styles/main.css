@@ -5453,16 +5453,18 @@ ul {
 }
 
 .price-card .tab-pane {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .price-card .tab-pane.active {
+  display: flex;
   padding: 0 2rem 2rem;
 }
 
 .price-banknote {
-  display: inline-block;
-  vertical-align: top;
   position: relative;
   width: 207px;
   height: 207px;
@@ -5487,13 +5489,10 @@ ul {
 }
 
 .price-val {
-  display: inline-block;
-  vertical-align: top;
   text-align: right;
   float: right;
   width: 100%;
   max-width: 50%;
-  height: 100%;
   font-size: 140px;
   line-height: 1;
   word-wrap: break-word;
