@@ -1,27 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
 @font-face {
-    font-family: "Effra";
-    font-weight: normal;
-    src: url("../fonts/Effra/Effra.eot?") format("eot"),
-    url("../fonts/Effra/Effra.woff2") format("woff2"),
-    url("../fonts/Effra/Effra.woff") format("woff"),
-    url("../fonts/Effra/Effra.ttf") format("truetype"),
-    url("../fonts/Effra/Effra.svg#Effra") format("svg");
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
 }
-@font-face {
-    font-family: "Effra-Bold";
-    font-weight: bold;
-    src: url("../fonts/Effra-Bold/Effra-Bold.eot?") format("eot"),
-    url("../fonts/Effra-Bold/Effra-Bold.woff2") format("woff2"),
-    url("../fonts/Effra-Bold/Effra-Bold.woff") format("woff"),
-    url("../fonts/Effra-Bold/Effra-Bold.ttf") format("truetype"),
-    url("../fonts/Effra-Bold/Effra-Bold.svg#Effra-Bold") format("svg");
-}
-@font-face {
-    font-family: "Effra-Medium";
-    font-weight: medium;
-    src: url("../fonts/Effra-Medium/Effra-Medium.eot?") format("eot"),
-    url("../fonts/Effra-Medium/Effra-Medium.woff2") format("woff2"),
-    url("../fonts/Effra-Medium/Effra-Medium.woff") format("woff"),
-    url("../fonts/Effra-Medium/Effra-Medium.ttf") format("truetype"),
-    url("../fonts/Effra-Medium/Effra-Medium.svg#Effra-Medium") format("svg");
-}
+
+//@font-face {
+//    font-family: "Effra";
+//    font-weight: normal;
+//    src: url("../fonts/Effra/Effra.eot?") format("eot"),
+//    url("../fonts/Effra/Effra.woff2") format("woff2"),
+//    url("../fonts/Effra/Effra.woff") format("woff"),
+//    url("../fonts/Effra/Effra.ttf") format("truetype"),
+//    url("../fonts/Effra/Effra.svg#Effra") format("svg");
+//}
+//@font-face {
+//    font-family: "Effra-Bold";
+//    font-weight: bold;
+//    src: url("../fonts/Effra-Bold/Effra-Bold.eot?") format("eot"),
+//    url("../fonts/Effra-Bold/Effra-Bold.woff2") format("woff2"),
+//    url("../fonts/Effra-Bold/Effra-Bold.woff") format("woff"),
+//    url("../fonts/Effra-Bold/Effra-Bold.ttf") format("truetype"),
+//    url("../fonts/Effra-Bold/Effra-Bold.svg#Effra-Bold") format("svg");
+//}
+//@font-face {
+//    font-family: "Effra-Medium";
+//    font-weight: medium;
+//    src: url("../fonts/Effra-Medium/Effra-Medium.eot?") format("eot"),
+//    url("../fonts/Effra-Medium/Effra-Medium.woff2") format("woff2"),
+//    url("../fonts/Effra-Medium/Effra-Medium.woff") format("woff"),
+//    url("../fonts/Effra-Medium/Effra-Medium.ttf") format("truetype"),
+//    url("../fonts/Effra-Medium/Effra-Medium.svg#Effra-Medium") format("svg");
+//}
