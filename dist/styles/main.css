@@ -5160,10 +5160,11 @@ ul {
 .wrapper {
   display: block;
   width: 100%;
-  background-image: url("../img/general/home-bg.jpg");
+  background-color: #221d35;
+  background-image: url("../img/general/home-bg.png");
   background-size: inherit;
   background-position: right;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
 }
 
 .wrapper .section {
