@@ -5253,6 +5253,7 @@ ul {
 
 .btn {
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .btn i {
@@ -5285,6 +5286,12 @@ ul {
 
 .header-nav {
   justify-content: center;
+}
+
+.header .dropdown-item:hover,
+.header .dropdown-item:focus {
+  color: rgba(34, 27, 52, 0.7);
+  background: transparent;
 }
 
 .header .navbar-toggler {

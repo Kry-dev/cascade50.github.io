@@ -52,7 +52,11 @@
             max-width: 120px;
         }
     }
-    
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: rgba($header-link-color,.7);
+        background: transparent;
+    }
     .navbar-toggler {
         background: $lilac-bg;
         width: 50px;
