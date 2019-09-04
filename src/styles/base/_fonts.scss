@@ -1,30 +1,27 @@
-@mixin fface($path, $family, $type: "", $weight: 400, $svg: "", $style: normal) {
-    @font-face {
-        font-family: $family;
-        @if $svg == "" {
-            // with OTF without SVG and EOT
-            //src: url("#{$path}#{$type}.otf") format("opentype"), url("#{$path}#{$type}.woff2") format("woff2"), url("#{$path}#{$type}.woff") format("woff"), url("#{$path}#{$type}.ttf") format("truetype");
-            src: url("#{$path}#{$type}.woff2") format("woff2"), url("#{$path}#{$type}.woff") format("woff"), url("#{$path}#{$type}.ttf") format("truetype");
-        }
-        @else {
-            // traditional src inclusions
-            src: url("#{$path}#{$type}.eot");
-            src: url("#{$path}#{$type}.eot?#iefix") format("embedded-opentype"), url("#{$path}#{$type}.woff2") format("woff2"), url("#{$path}#{$type}.woff") format("woff"), url("#{$path}#{$type}.ttf") format("truetype"), url("#{$path}#{$type}.svg##{$svg}") format("svg");
-        }
-        font-weight: $weight;
-        font-style: $style;
-    }
+@font-face {
+    font-family: "Effra";
+    font-weight: normal;
+    src: url("../fonts/Effra/Effra.eot?") format("eot"),
+    url("../fonts/Effra/Effra.woff2") format("woff2"),
+    url("../fonts/Effra/Effra.woff") format("woff"),
+    url("../fonts/Effra/Effra.ttf") format("truetype"),
+    url("../fonts/Effra/Effra.svg#Effra") format("svg");
 }
-// ========================================================importing
-//$dir: "../../fonts/";
-$dir: "../fonts/Effra/";
-
-$effra: "Effra";
-// adding specific types of font-weights
-@include fface("#{$dir}#{$effra}", $effra, "-Light", 300);
-@include fface("#{$dir}#{$effra}", $effra, "", 400);
-@include fface("#{$dir}#{$effra}", $effra, "-Medium", 500);
-@include fface("#{$dir}#{$effra}", $effra, "-Bold", 700);
-@include fface("#{$dir}#{$effra}", $effra, "-Heavy", 900);
-
-
+@font-face {
+    font-family: "Effra-Bold";
+    font-weight: bold;
+    src: url("../fonts/Effra-Bold/Effra-Bold.eot?") format("eot"),
+    url("../fonts/Effra-Bold/Effra-Bold.woff2") format("woff2"),
+    url("../fonts/Effra-Bold/Effra-Bold.woff") format("woff"),
+    url("../fonts/Effra-Bold/Effra-Bold.ttf") format("truetype"),
+    url("../fonts/Effra-Bold/Effra-Bold.svg#Effra-Bold") format("svg");
+}
+@font-face {
+    font-family: "Effra-Medium";
+    font-weight: medium;
+    src: url("../fonts/Effra-Medium/Effra-Medium.eot?") format("eot"),
+    url("../fonts/Effra-Medium/Effra-Medium.woff2") format("woff2"),
+    url("../fonts/Effra-Medium/Effra-Medium.woff") format("woff"),
+    url("../fonts/Effra-Medium/Effra-Medium.ttf") format("truetype"),
+    url("../fonts/Effra-Medium/Effra-Medium.svg#Effra-Medium") format("svg");
+}
