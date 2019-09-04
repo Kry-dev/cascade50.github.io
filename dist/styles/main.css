@@ -9527,6 +9527,13 @@ ul {
   .section.case-hero .lead {
     text-align: left;
   }
+
+  .footer .navbar-logo {
+    display: block;
+    text-align: center;
+    margin: 0 auto 1rem;
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -9635,13 +9642,6 @@ ul {
   .footer-bottom {
     border: 0;
     padding: 0;
-  }
-
-  .footer .navbar-logo {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    max-width: 200px;
   }
 
   .footer .socials {
