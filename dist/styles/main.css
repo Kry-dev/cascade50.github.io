@@ -9612,8 +9612,19 @@ ul {
   }
 
   .price-val {
-    font-size: 60px;
     max-width: 100%;
+    text-align: center;
+    height: initial;
+    float: none;
+    font-size: 60px;
+  }
+
+  .price-val-descr {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2rem;
   }
 
   .price sup {
