@@ -36,7 +36,7 @@
     .socials {
         margin-top: -1rem;
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         &-partners {
             justify-content: flex-end;
             transform: translateY(2rem);

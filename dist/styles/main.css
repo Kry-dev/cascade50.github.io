@@ -7669,20 +7669,6 @@ ul {
     column-count: 3;
     flex-wrap: wrap;
   }
-
-  .footer-partners {
-    justify-content: flex-end;
-    transform: translateY(2rem);
-  }
-
-  .footer-partners a {
-    display: block;
-    margin-bottom: -1rem;
-  }
-
-  .footer-partners a img {
-    display: block;
-  }
 }
 
 @media (min-width: 992px) {
@@ -8568,6 +8554,20 @@ ul {
 
   .cases .card {
     padding: 4rem;
+  }
+
+  .footer-partners {
+    justify-content: flex-end;
+    transform: translateY(2rem);
+  }
+
+  .footer-partners a {
+    display: block;
+    margin-bottom: -1rem;
+  }
+
+  .footer-partners a img {
+    display: block;
   }
 }
 
