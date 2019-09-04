@@ -5418,6 +5418,11 @@ ul {
   justify-content: center;
 }
 
+.section.empower .card:hover,
+.section.empower .card:focus {
+  box-shadow: none;
+}
+
 .how-works .card:hover,
 .how-works .card:focus {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
