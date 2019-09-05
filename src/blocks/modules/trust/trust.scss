@@ -1,16 +1,16 @@
 .trust {
     @include media-breakpoint-up(lg) {
         .card {
-            padding: 4rem;
+            padding: 3.2rem;
         }
     }
     @include media-breakpoint-up(md) {
         .card {
-            min-height: 26.875rem;
+            min-height: 21.5rem;
         }
     }
     .section-title {
-        margin-bottom: 4.375rem;
+        margin-bottom: 3.5rem;
     }
     .card {
         display: flex;

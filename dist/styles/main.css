@@ -358,27 +358,27 @@ h6,
 
 h1,
 .h1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
 }
 
 h2,
 .h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h3,
 .h3 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 
 h4,
 .h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h5,
 .h5 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 h6,
@@ -392,25 +392,25 @@ h6,
 }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 4.8rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-2 {
-  font-size: 5.5rem;
+  font-size: 4.4rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 3.6rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-4 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -2101,7 +2101,7 @@ a.text-lilac:focus {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 1.4rem 1.25rem;
+  padding: 1.125rem 1rem;
   font-size: Arimo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   line-height: 1.5;
   border-radius: 0.25rem;
@@ -3285,8 +3285,8 @@ a.badge-lilac.focus {
 }
 
 .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .dropdown-toggle-split::after,
@@ -3741,7 +3741,7 @@ a.badge-lilac.focus {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#221b34' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
+  background-image: str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#221b34' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") xw;
 }
 
 .navbar-light .navbar-text {
@@ -3767,7 +3767,7 @@ a.badge-lilac.focus {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -3787,16 +3787,16 @@ a.badge-lilac.focus {
 }
 
 .navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
   border-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
 }
 
 .navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
 .navbar-dark .navbar-text a {
@@ -3959,8 +3959,8 @@ select.form-control:focus::-ms-value {
 }
 
 .col-form-label-lg {
-  padding-top: calc(1.25rem + 1px);
-  padding-bottom: calc(1.25rem + 1px);
+  padding-top: calc(1rem + 1px);
+  padding-bottom: calc(1rem + 1px);
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -4000,8 +4000,8 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-lg {
-  height: 3.75rem;
-  padding: 1.25rem 1rem;
+  height: 3rem;
+  padding: 1rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0;
@@ -4495,7 +4495,7 @@ textarea.form-control.is-invalid {
 
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
-  height: 3.75rem;
+  height: 3rem;
 }
 
 .input-group-lg > .form-control,
@@ -4504,7 +4504,7 @@ textarea.form-control.is-invalid {
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-  padding: 1.25rem 1rem;
+  padding: 1rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0;
@@ -5171,7 +5171,7 @@ ul {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .wrapper .section .jumbotron {
@@ -5185,7 +5185,7 @@ ul {
 .wrapper .section-title {
   font-family: "Arimo", sans-serif;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -5217,13 +5217,13 @@ ul {
 }
 
 .wrapper .section .card-text {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .wrapper .section .card {
   height: 100%;
-  min-height: 18.125rem;
+  min-height: 14.5rem;
   border-radius: 0;
   font-family: "Arimo", sans-serif;
   margin-bottom: 2rem;
@@ -5318,14 +5318,14 @@ ul {
 }
 
 .hero .lead {
-  font-size: 1.625rem;
-  margin-bottom: 40px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
 }
 
 .hero-title {
   font-family: "Arimo", sans-serif;
   font-weight: lighter;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .hero-img {
@@ -5358,7 +5358,7 @@ ul {
 }
 
 .trust .section-title {
-  margin-bottom: 4.375rem;
+  margin-bottom: 3.5rem;
 }
 
 .trust .card {
@@ -5511,10 +5511,6 @@ ul {
 .price-val-descr {
   font-size: 1.5rem;
   line-height: 1;
-}
-
-.tools.section .card {
-  margin-bottom: 4rem;
 }
 
 .tools.section .card-header {
@@ -7662,12 +7658,12 @@ ul {
   }
 
   .trust .card {
-    min-height: 26.875rem;
+    min-height: 21.5rem;
   }
 
   .how-works .card-body {
     flex: 1;
-    min-height: 16.875rem;
+    min-height: 13.5rem;
   }
 
   .cases .card {
@@ -8537,7 +8533,7 @@ ul {
   }
 
   .header .navbar-expand-lg {
-    height: 8.625rem;
+    height: 6.9rem;
   }
 
   .header .navbar-expand-lg .navbar-nav .nav-link {
@@ -8549,7 +8545,7 @@ ul {
   }
 
   .trust .card {
-    padding: 4rem;
+    padding: 3.2rem;
   }
 
   .cases .card {
@@ -9482,7 +9478,7 @@ ul {
   }
 
   .wrapper .section {
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
   .wrapper .section .jumbotron {
@@ -9664,7 +9660,7 @@ ul {
 
   .footer-top {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .footer-bottom {
