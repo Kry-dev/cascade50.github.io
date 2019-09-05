@@ -125,10 +125,10 @@ $navbar-light-disabled-color:       rgba($header-link-color, .3);
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23")xw;
 $navbar-light-toggler-border-color: rgba($header-link-color, .1);
 
-$display1-size:               4.8rem;
-$display2-size:               4.4rem;
-$display3-size:               3.6rem;
-$display4-size:               3rem;
+$display1-size:               6rem;
+$display2-size:               5.5rem;
+$display3-size:               4.5rem;
+$display4-size:               3.75rem;
 
 
 // Buttons
