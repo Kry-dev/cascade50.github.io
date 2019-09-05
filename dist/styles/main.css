@@ -5333,6 +5333,14 @@ ul {
   margin-bottom: 1.875rem;
 }
 
+.hero .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .hero-title {
   font-family: "Arimo", sans-serif;
   font-weight: lighter;
@@ -6805,6 +6813,10 @@ ul {
     width: 100%;
   }
 
+  .hero .container {
+    max-width: 540px;
+  }
+
   .footer .container {
     max-width: 540px;
   }
@@ -7677,6 +7689,10 @@ ul {
     top: 50%;
     right: 1rem;
     transform: translateY(-50%);
+  }
+
+  .hero .container {
+    max-width: 720px;
   }
 
   .trust .card {
@@ -8568,6 +8584,10 @@ ul {
 
   .header .login-nav .nav-item + .nav-item {
     border-left: 1px solid #dee2e6;
+  }
+
+  .hero .container {
+    max-width: 960px;
   }
 
   .trust .card {
@@ -9462,6 +9482,10 @@ ul {
     left: 0;
     width: 200%;
     transform: translateY(-50%);
+  }
+
+  .hero .container {
+    max-width: 1140px;
   }
 
   .price-banknote {
