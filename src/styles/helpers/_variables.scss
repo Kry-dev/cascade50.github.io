@@ -87,6 +87,21 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
+//$grid-breakpoints: (
+//        xs: 0,
+//        sm: 576px,
+//        md: 614px,
+//        lg: 794px,
+//        xl: 960px
+//);
+
+$container-max-widths: (
+        sm: 432px,
+        md: 576px,
+        lg: 768px,
+        xl: 912px
+);
+
 // Body
 //
 // Settings for the `<body>` element.
