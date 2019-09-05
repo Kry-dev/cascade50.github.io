@@ -5328,6 +5328,10 @@ ul {
   width: 100vh;
 }
 
+.hero.section {
+  padding-top: 1rem;
+}
+
 .hero .lead {
   font-size: 1.3rem;
   margin-bottom: 1.875rem;

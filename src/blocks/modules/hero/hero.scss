@@ -1,4 +1,7 @@
 .hero {
+    &.section {
+        padding-top: 1rem;
+    }
     @include media-breakpoint-down(md) {
         &-title {
             text-align: center;
