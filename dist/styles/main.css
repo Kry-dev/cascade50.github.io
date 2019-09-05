@@ -5256,13 +5256,13 @@ ul {
   font-size: 1rem;
 }
 
-.btn {
+.wrapper .btn {
   text-transform: uppercase;
   word-wrap: break-word;
   font-size: .925rem;
 }
 
-.btn i {
+.wrapper .btn i {
   display: inline-block;
   border: solid #fff;
   border-width: 0 2px 2px 0;
@@ -5270,19 +5270,19 @@ ul {
   margin-left: .5rem;
 }
 
-.btn .arr-right {
+.wrapper .btn .arr-right {
   transform: rotate(-45deg);
 }
 
-.btn .arr-left {
+.wrapper .btn .arr-left {
   transform: rotate(135deg);
 }
 
-.btn .arr-up {
+.wrapper .btn .arr-up {
   transform: rotate(-135deg);
 }
 
-.btn .arr-down {
+.wrapper .btn .arr-down {
   transform: rotate(45deg);
 }
 
