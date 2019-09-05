@@ -2,6 +2,9 @@
 .header {
     .navbar {
         justify-content: space-between;
+        &.fixed-top {
+            position: fixed !important;
+        }
     }
     &-nav {
         justify-content: center;

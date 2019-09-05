@@ -5165,6 +5165,7 @@ ul {
   background-size: 50%;
   background-position: right;
   background-repeat: repeat-y;
+  padding-top: 7.5rem;
 }
 
 .wrapper .section {
@@ -5288,6 +5289,10 @@ ul {
 
 .header .navbar {
   justify-content: space-between;
+}
+
+.header .navbar.fixed-top {
+  position: fixed !important;
 }
 
 .header-nav {
