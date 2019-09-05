@@ -60,12 +60,12 @@
     }
     .navbar-toggler {
         background: $lilac-bg;
-        width: 50px;
-        height: 40px;
+        width: 3.125rem;
+        height: 2.5rem;
         transition: $transition-base;
         .fa {
             color: $white;
-            font-size: 30px;
+            font-size: 1.875rem;
         }
         &[aria-expanded="true"] {
             .fa:before {
