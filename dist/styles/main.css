@@ -5236,7 +5236,11 @@ ul {
 
 .wrapper .navbar-logo {
   width: 100%;
-  max-width: 218px;
+  max-width: 16.5rem;
+}
+
+.wrapper a {
+  font-size: 1.15rem;
 }
 
 .wrapper a:hover,
@@ -5752,6 +5756,18 @@ ul {
   color: #fff;
   font-size: 0.875rem;
   line-height: 1.5rem;
+}
+
+.footer a {
+  font-size: 1rem;
+}
+
+.footer .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-nav a {
@@ -6782,6 +6798,10 @@ ul {
     display: inline-block;
     width: 100%;
   }
+
+  .footer .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -7666,6 +7686,10 @@ ul {
     min-height: 26.875rem;
   }
 
+  .footer .container {
+    max-width: 720px;
+  }
+
   .footer-nav {
     direction: column;
     column-count: 3;
@@ -8529,7 +8553,7 @@ ul {
   }
 
   .header .navbar-expand-lg {
-    height: 6.9rem;
+    height: 7.5rem;
   }
 
   .header .navbar-expand-lg .navbar-nav .nav-link {
@@ -8546,6 +8570,10 @@ ul {
 
   .cases .card {
     padding: 4rem;
+  }
+
+  .footer .container {
+    max-width: 960px;
   }
 
   .footer-partners {
@@ -9433,6 +9461,10 @@ ul {
   .price-banknote {
     width: 276px;
     height: 276px;
+  }
+
+  .footer .container {
+    max-width: 1140px;
   }
 }
 

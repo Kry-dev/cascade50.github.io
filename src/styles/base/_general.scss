@@ -116,9 +116,10 @@ h1, h2, h3, h4, h5, h6, ul {
     }
     .navbar-logo {
         width: 100%;
-        max-width: 218px;
+        max-width: 16.5rem;
     }
     a {
+        font-size: 1.15rem;
         &:hover,
         &:focus {
             cursor: pointer;
