@@ -5356,10 +5356,6 @@ ul {
   padding-top: 1rem;
 }
 
-.hero.section .jumbotron {
-  padding: 2rem;
-}
-
 .hero .lead {
   font-size: 1.3rem;
   margin-bottom: 1.875rem;
@@ -7759,6 +7755,10 @@ ul {
     top: 50%;
     right: 1rem;
     transform: translateY(-50%);
+  }
+
+  .hero-title {
+    margin: -2rem 0 1.875rem  -2rem;
   }
 
   .what-is .container {

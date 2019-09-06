@@ -1,8 +1,10 @@
 .hero {
     &.section {
         padding-top: 1rem;
-        .jumbotron {
-            padding: 2rem;
+    }
+    @include media-breakpoint-up(md) {
+        &-title {
+            margin: -2rem 0 1.875rem  -2rem;
         }
     }
     @include media-breakpoint-down(md) {
