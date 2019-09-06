@@ -47,7 +47,6 @@
             &:hover,
             &:focus {
                 cursor: pointer;
-                text-decoration: none;
             }
         }
         li {
@@ -115,8 +114,8 @@
         }
         
         .socials {
-            margin: 0 auto;
             justify-content: center;
+            margin: 0 auto;
         }
     }
     

@@ -5324,6 +5324,16 @@ ul {
   justify-content: center;
 }
 
+.header .nav-item.active {
+  text-decoration: underline;
+}
+
+.header .dropdown-item.active {
+  text-decoration: underline;
+  background: transparent;
+  color: initial;
+}
+
 .header .dropdown-item:hover,
 .header .dropdown-item:focus {
   color: rgba(34, 27, 52, 0.7);
@@ -5860,7 +5870,6 @@ ul {
 .footer-nav a:hover,
 .footer-nav a:focus {
   cursor: pointer;
-  text-decoration: none;
 }
 
 .footer-nav li {
@@ -9806,8 +9815,8 @@ ul {
   }
 
   .footer .socials {
-    margin: 0 auto;
     justify-content: center;
+    margin: 0 auto;
   }
 }
 

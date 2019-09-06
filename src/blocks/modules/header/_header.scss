@@ -27,6 +27,9 @@
     &-nav {
         justify-content: center;
     }
+    .nav-item.active {
+        text-decoration: underline;
+    }
     @include media-breakpoint-up(md) {
         .navbar-brand {
             position: absolute;
@@ -74,7 +77,11 @@
             max-width: 120px;
         }
     }
-    
+    .dropdown-item.active {
+        text-decoration: underline;
+        background: transparent;
+        color: initial;
+    }
     .dropdown-item:hover,
     .dropdown-item:focus {
         color: rgba($header-link-color,.7);
@@ -105,6 +112,7 @@
         .dropdown-item {
             padding: .5rem 1.5rem;
         }
+        
         .navbar-nav .nav-link {
             padding: .5rem 0 !important;
         }
