@@ -5361,6 +5361,10 @@ ul {
   width: 100%;
 }
 
+.section.history p {
+  font-size: 1.15rem;
+}
+
 .what-is .btn {
   margin-bottom: 1rem;
 }
