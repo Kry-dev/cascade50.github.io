@@ -5236,7 +5236,8 @@ ul {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.wrapper .navbar-logo {
+.wrapper .navbar-logo,
+.wrapper .navbar-logo-dark {
   width: 100%;
   max-width: 16.5rem;
 }
@@ -5305,6 +5306,18 @@ ul {
 
 .header .navbar.fixed-top.scrolled a {
   color: #3a3a49;
+}
+
+.header .navbar.fixed-top.scrolled .navbar-logo-dark {
+  display: block;
+}
+
+.header .navbar.fixed-top.scrolled .navbar-logo {
+  display: none;
+}
+
+.header .navbar .navbar-logo-dark {
+  display: none;
 }
 
 .header-nav {
@@ -9560,7 +9573,8 @@ ul {
     padding: 0 1rem;
   }
 
-  .header .navbar-logo {
+  .header .navbar-logo,
+  .header .navbar-logo-dark {
     max-width: 120px;
   }
 }

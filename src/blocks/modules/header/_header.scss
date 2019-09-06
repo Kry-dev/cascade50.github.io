@@ -12,7 +12,16 @@
                 a {
                     color: $body-color;
                 }
+                .navbar-logo-dark {
+                    display: block;
+                }
+                .navbar-logo {
+                    display: none;
+                }
             }
+        }
+        .navbar-logo-dark {
+            display: none;
         }
     }
     &-nav {
@@ -60,7 +69,8 @@
             }
         }
         
-        .navbar-logo {
+        .navbar-logo,
+        .navbar-logo-dark{
             max-width: 120px;
         }
     }
