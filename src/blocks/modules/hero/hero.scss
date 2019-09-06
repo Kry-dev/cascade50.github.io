@@ -1,6 +1,9 @@
 .hero {
     &.section {
         padding-top: 1rem;
+        .jumbotron {
+            padding: 2rem;
+        }
     }
     @include media-breakpoint-down(md) {
         &-title {
