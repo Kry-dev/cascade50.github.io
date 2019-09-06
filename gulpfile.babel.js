@@ -56,6 +56,11 @@ const requireDir = require("require-dir"),
             dist: "./src/img/sprites/",
             watch: "./src/img/svg/*.svg"
         },
+        video: {
+            src: "./src/video/**/*.{mov,mp4}",
+            dist: "./dist/video/",
+            watch: "./src/video/**/*.{mov,mp4}"
+        },
         fonts: {
             src: "./src/fonts/**/*.{woff,woff2,ttf,eot,svg}",
             dist: "./dist/fonts/",
@@ -77,9 +82,9 @@ export { paths };
 
 // export const development = gulp.series("clean", "smart-grid", //removed smart grid
 export const development = gulp.series("clean",
-    gulp.parallel(["views", "styles", "scripts","sprites", "images", "webp",  "fonts", "favicons"]),
+    gulp.parallel(["views", "styles", "scripts","sprites", "images", "webp", "fonts", "video","favicons"]),
     gulp.parallel("serve"));
 
 export const prod = gulp.series("clean",
-    gulp.series(["views", "styles", "scripts", "sprites", "images", "webp",  "fonts", "favicons", "gzip"]));
+    gulp.series(["views", "styles", "scripts", "sprites", "images", "webp",  "fonts", "video" , "favicons", "gzip"]));
 export default development;
