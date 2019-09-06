@@ -1,6 +1,5 @@
 .hero {
     &.section {
-        padding-top: 1rem;
     }
     @include media-breakpoint-up(md) {
         &-title {

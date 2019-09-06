@@ -25,4 +25,8 @@
     .arr-down {
         transform: rotate(45deg);
     }
+    &:hover,
+    &:focus {
+        transition: $transition-base;
+    }
 }

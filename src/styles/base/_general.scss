@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6, ul {
     background-repeat: repeat-y;
     background-attachment: fixed;
     padding-top: $header-height;
+    transition: $transition-base;
     .section {
         width: 100%;
         height: 100%;
@@ -113,6 +114,7 @@ h1, h2, h3, h4, h5, h6, ul {
             margin-bottom: 2rem;
             &:hover, &:focus {
                 box-shadow: $box-shadow;
+                transition: $transition-base;
             }
         }
     }
@@ -126,6 +128,7 @@ h1, h2, h3, h4, h5, h6, ul {
         &:hover,
         &:focus {
             cursor: pointer;
+            transition: $transition-base;
         }
     }
     .form {

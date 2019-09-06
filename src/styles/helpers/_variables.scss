@@ -111,7 +111,7 @@ $body-color:                $text-color;
 $header-height: 7.5rem;
 
 $jumbotron-bg: transparent;
-
+$transition-base:             all .6s ease-in-out;
 // stylelint-disable value-keyword-case
 //$font-family-sans-serif:      "Effra", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-sans-serif:      "Arimo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -153,6 +153,8 @@ $btn-padding-x:               1rem;
 $btn-font-family:             "Arimo", sans-serif;
 $btn-font-size:               $font-family-base;
 $btn-font-weight:             500;
+
+$btn-transition:              color .6s ease-in-out, background-color .6s ease-in-out, border-color .6s ease-in-out, box-shadow .6s ease-in-out !default;
 
 $card-cap-bg: transparent;
 $card-border-radius: 0;
