@@ -5290,10 +5290,21 @@ ul {
 
 .header .navbar {
   justify-content: space-between;
+  background: #221d35;
 }
 
 .header .navbar.fixed-top {
   position: fixed !important;
+}
+
+.header .navbar.fixed-top.scrolled {
+  background: #fff;
+  color: #3a3a49;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.header .navbar.fixed-top.scrolled a {
+  color: #3a3a49;
 }
 
 .header-nav {

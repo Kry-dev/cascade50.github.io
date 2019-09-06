@@ -2,8 +2,17 @@
 .header {
     .navbar {
         justify-content: space-between;
+        background: $lilac;
         &.fixed-top {
             position: fixed !important;
+            &.scrolled {
+                background: $white;
+                color: $body-color;
+                box-shadow: $box-shadow;
+                a {
+                    color: $body-color;
+                }
+            }
         }
     }
     &-nav {

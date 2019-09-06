@@ -183,6 +183,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('nav').toggleClass('scrolled', jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).scrollTop() > 100);
+});
 
 /***/ }),
 
