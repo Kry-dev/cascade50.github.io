@@ -5316,6 +5316,10 @@ ul {
   display: none;
 }
 
+.header .navbar.fixed-top.scrolled .nav-item.active {
+  border-bottom: 1px solid #3a3a49;
+}
+
 .header .navbar .navbar-logo-dark {
   display: none;
 }
@@ -5325,7 +5329,7 @@ ul {
 }
 
 .header .nav-item.active {
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 .header .dropdown-item.active {
