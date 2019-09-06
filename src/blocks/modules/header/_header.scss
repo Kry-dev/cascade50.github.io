@@ -3,6 +3,7 @@
     .navbar {
         justify-content: space-between;
         background: $lilac;
+        transition-duration: 0.6s;
         &.fixed-top {
             position: fixed !important;
             &.scrolled {

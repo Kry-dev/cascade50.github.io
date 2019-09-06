@@ -5292,6 +5292,7 @@ ul {
 .header .navbar {
   justify-content: space-between;
   background: #221d35;
+  transition-duration: 0.6s;
 }
 
 .header .navbar.fixed-top {
