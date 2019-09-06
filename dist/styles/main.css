@@ -5371,11 +5371,10 @@ ul {
   justify-content: center;
   position: relative;
   width: 25.125rem;
-  height: 50.375rem;
+  height: 51.375rem;
   background: url("../img/sprites/svg/device.svg") center center no-repeat;
   background-size: cover;
-  padding: 1.5rem;
-  margin-right: auto;
+  padding: 6rem 1.5rem;
 }
 
 .video-container .video-content {
@@ -5387,7 +5386,7 @@ ul {
   height: 100%;
   overflow: hidden;
   text-align: center;
-  border-radius: 2rem;
+  border-radius: 0;
   box-shadow: -25px 60px 60px grey;
 }
 
@@ -9632,6 +9631,10 @@ ul {
     justify-content: center;
   }
 
+  .video-container {
+    margin-left: -3rem;
+  }
+
   .diffs {
     height: 100%;
   }
@@ -9687,6 +9690,10 @@ ul {
 
   .hero .jumbotron-btn-group {
     flex-direction: column;
+  }
+
+  .video-container {
+    margin: 0 auto;
   }
 
   .what-is .img-fluid {
