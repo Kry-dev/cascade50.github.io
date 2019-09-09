@@ -9573,6 +9573,7 @@ ul {
     top: 50%;
     left: 0;
     width: 200%;
+    height: initial;
     transform: translateY(-50%);
   }
 
@@ -9591,6 +9592,18 @@ ul {
 
   .footer .container {
     max-width: 1240px;
+  }
+}
+
+@media (min-width: 1200px) and (max-height: 700px) {
+  .hero-img {
+    min-height: 80%;
+  }
+
+  .hero-img img {
+    top: 70%;
+    max-width: 520px;
+    max-height: 480px;
   }
 }
 
