@@ -5861,14 +5861,6 @@ ul {
   font-size: 1rem;
 }
 
-.footer .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .footer-nav a {
   color: inherit;
   display: block;
@@ -6901,6 +6893,10 @@ ul {
     max-width: 540px;
   }
 
+  .section.empower .container {
+    max-width: 540px;
+  }
+
   .footer .container {
     max-width: 540px;
   }
@@ -7785,6 +7781,10 @@ ul {
 
   .trust .card {
     min-height: 21.5rem;
+  }
+
+  .section.empower .container {
+    max-width: 720px;
   }
 
   .how-works .card-body {
@@ -8682,6 +8682,10 @@ ul {
     padding: 3.2rem;
   }
 
+  .section.empower .container {
+    max-width: 960px;
+  }
+
   .cases .card {
     padding: 4rem;
   }
@@ -9574,6 +9578,10 @@ ul {
 
   .what-is .container {
     max-width: 1140px;
+  }
+
+  .section.empower .container {
+    max-width: 1240px;
   }
 
   .price-banknote {
